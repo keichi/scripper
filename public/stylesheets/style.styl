@@ -1,0 +1,58 @@
+@import 'nib'
+
+global-reset()
+
+body
+	background-color: #da6272
+
+div.container
+	padding: 100px 50px
+	width: 700px
+	margin: 0 auto
+	background-color: #da6272
+
+h1
+	font-family: Monoton
+	font-size:50px
+	color: rgba(250, 250, 250, 1.0)
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6)
+	text-align: center
+
+form
+	width: 100%
+	text-align: center
+	margin: 20px 0
+
+input
+	display: inline-block
+
+input.query
+	font-family: 'Actor'
+	font-size: 13px
+	width: 400px
+	outline: none
+	border: none
+	padding: 7px 7px
+	color: rgba(0, 0, 0, 0.7)
+	background-color: rgba(255, 255, 255, 0.9)
+	border-radius: 2px
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2), inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+
+
+input.submit
+	height: 30px
+	font-size: 13px
+	background-color: #42aac7
+	color: #eee
+	border: none
+	border-radius: 3px
+	padding: 7px 7px
+	font-family: 'Actor'
+	box-shadow: 0px 5px 0px 0px darken(#42aac7, 20%)
+	transition: background-color 0.1s linear
+	position: relative
+	&:hover
+		background-color: lighten(#42aac7, 10%)
+	&:active
+		box-shadow: 0px 3px 0px 0px darken(#42aac7, 20%)
+		top: 2px
